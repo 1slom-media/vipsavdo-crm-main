@@ -15,6 +15,7 @@ import CategorySelectForm from "components/admin/product-details/CategorySelectF
 import VideoPicker from "components/admin/product-details/VideoPicker";
 import ProductCreateStepper from "components/admin/product-details/Stepper";
 import NameInputs from "components/admin/product-details/NameInputs";
+import PositionsDetails from "components/admin/product-details/PositionsDetails";
 import DescriptionInputs from "components/admin/product-details/DescriptionInputs";
 import ImageLoaderForm from "components/admin/product-details/ImageLoaderForm";
 import CountrySelectForm from "components/admin/product-details/CountrySelectForm";
@@ -80,6 +81,11 @@ const ProductCreateAndEdit = ({ handleSubmit, actionType, loading }) => {
             <Grid item xs={12}>
               <Field component={NameInputs} name="title" />
             </Grid>
+
+            <Grid item xs={12}>
+              <Field component={PositionsDetails} name="positions" />
+            </Grid>
+            
             <Grid item xs={12}>
               <Field
                 component={DescriptionInputs}

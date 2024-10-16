@@ -35,6 +35,12 @@ const skuHeading = [
     flash: true,
   },
   {
+    id: "operatorPrice",
+    label: "operator to'lovi",
+    align: "right",
+    flash: true,
+  },
+  {
     id: "boughtPrice",
     label: "Sotib olingan, so'm",
     align: "right",

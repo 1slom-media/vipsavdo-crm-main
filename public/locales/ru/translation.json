@@ -112,6 +112,7 @@
   "ErrorDec": "Произошла ошибка",
   "MakeUserAdmin": "Сделать пользователя администратором",
   "MakeUserAdminDesc": "Пользователь выходит на уровень администратора и получает больше возможностей!",
+  "MakeUserSeller": "Foydalanuvchi seller darajasiga chiqadi",
   "MakeOpeAdmin": "Сделать пользователя оператором",
   "MakeOpeAdminDesc": "Операторы отвечают на заказы от клиентов!",
   "OrderInfo": "Информация о заказе",

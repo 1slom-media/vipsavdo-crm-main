@@ -14,7 +14,7 @@ import { Chart } from "../../chart";
 import { useSelector } from "react-redux";
 
 export const OverviewPrivateWallet = (props) => {
-  const profit = useSelector((state) => state.dashboard.cleanProfit);
+  const profit = useSelector((state) => state.dashboard.balance);
   const theme = useTheme();
 
   const chartOptions = {

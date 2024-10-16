@@ -24,11 +24,8 @@ export const dashboardReducer = createSlice({
     },
     [getProfitStats.fulfilled]: (state, { payload }) => {
       state.isProfitLoading = false;
-      state.cleanProfit = payload?.profit;
-      state.totalProfit = payload?.totalProfit;
-      state.lastPayments = payload?.payments;
-      state.adminsBalance = payload?.adminBalance;
-      state.operatorsBalance = payload?.operatorBalance;
+      state.totalProfit = payload?.balance;
+    
     },
     [getProfitStats.rejected]: (state) => {
       state.isProfitLoading = false;

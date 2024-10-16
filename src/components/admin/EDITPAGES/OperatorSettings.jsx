@@ -54,6 +54,7 @@ const OperatorSettings = ({ handleSubmit }) => {
           data: {
             isAdmin: values?.isAdmin?.toString(),
             isOperator: values?.isOperator?.toString(),
+            isSeller: values.isSeller?.toString(),
           },
           callBack,
         },
@@ -110,6 +111,27 @@ const OperatorSettings = ({ handleSubmit }) => {
               </Stack>
             </Stack>
             <Field component={SwitchInput} name="isOperator" />
+          </Stack>
+          <Divider sx={{ my: 2 }} />
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Stack direction="row" justifyContent="flex-start" gap="10px">
+              <StyledIconBox>
+                <EarphoneFilled />
+              </StyledIconBox>
+              <Stack direction="column" justifyContent="space-between">
+                <Typography variant="body2" color="text.legacy">
+                  {t("MakeSelAdmin")}
+                </Typography>
+                <Typography variant="body1" color="text.legacy">
+                  {t("MakeUserSeller")}
+                </Typography>
+              </Stack>
+            </Stack>
+            <Field component={SwitchInput} name="isSeller" />
           </Stack>
         </StyledSettingsBox>
       </Stack>

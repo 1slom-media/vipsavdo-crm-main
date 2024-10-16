@@ -113,6 +113,7 @@
   "ErrorDec": "An error occurred",
   "MakeUserAdmin": "Make user admin",
   "MakeUserAdminDesc": "The user goes to the admin level and has more options!",
+  "MakeUserSeller": "Foydalanuvchi seller darajasiga chiqadi",
   "MakeOpeAdmin": "Make the user an operator",
   "MakeOpeAdminDesc": "Operators respond to orders from customers!",
   "OrderInfo": "Order information",

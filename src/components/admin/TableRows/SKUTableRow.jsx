@@ -9,6 +9,7 @@ const SkuTableRow = ({
   discountPrice,
   purchasePrice,
   referalPrice,
+  operatorPrice,
   boughtPrice,
   skuTitle,
   availableAmount,
@@ -118,6 +119,17 @@ const SkuTableRow = ({
           value={referalPrice}
           onChange={handleInputChange}
           name="referalPrice"
+        />
+      </TableCell>
+      <TableCell sx={{ py: 0 }}>
+        <TextField
+          size="small"
+          sx={{ width: "120px" }}
+          placeholder="0"
+          type="number"
+          value={operatorPrice}
+          onChange={handleInputChange}
+          name="operatorPrice"
         />
       </TableCell>
       <TableCell sx={{ py: 0 }}>

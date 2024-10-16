@@ -165,6 +165,15 @@ const ProductSelectRow = ({
                     so&apos;m
                   </Typography>
                 </Stack>
+                <Stack mb={2}>
+                  <Typography variant="h6" color="primary">
+                    Mahsulot pozitsiyasi:
+                  </Typography>
+                  <Typography variant="string">
+                    {variant.position?.toLocaleString()}{" "}
+                   
+                  </Typography>
+                </Stack>
                 <Stack>
                   <Typography variant="h6" color="primary">
                     Buyurtma soni:

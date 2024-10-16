@@ -97,7 +97,7 @@ export const OverviewCryptoWallet = (props) => {
               {profit?.toLocaleString()} so`m
             </Typography>
             <Typography color="textSecondary" sx={{ mt: 1 }} variant="body2">
-              Umumiy aylanma summasi
+              Foydalanuvchining Umumiy balansi
             </Typography>
           </Box>
           <Avatar

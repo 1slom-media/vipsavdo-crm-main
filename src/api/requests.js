@@ -1026,6 +1026,8 @@ export async function addOperatorAsync({ token, values, alert, callBack }) {
   }
 }
 
+
+
 // Comments Request
 
 export async function getCommentsList({ id }) {
@@ -1363,7 +1365,18 @@ export async function updateSmsSts({ token, data, alert }) {
 
 export async function getDashboardStatistics({ token }) {
   const res = await axios({
-    url: `${server}/order/admin/statistics`,
+    url: `${server}/user/balance`,
+    method: "GET",
+    headers: {
+      auth: token,
+    },
+  });
+  return res.data;
+}
+
+export async function getDashboardTotalStatistics({ token }) {
+  const res = await axios({
+    url: `${server}/order/admin-total-balance`,
     method: "GET",
     headers: {
       auth: token,
