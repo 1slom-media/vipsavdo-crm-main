@@ -29,6 +29,12 @@ const skuHeading = [
     flash: true,
   },
   {
+    id: "DeliveryPrice",
+    label: "Sotish narxi, so'm",
+    align: "center",
+    flash: true,
+  },
+  {
     id: "referalPrice",
     label: "Admin to'lovi",
     align: "right",

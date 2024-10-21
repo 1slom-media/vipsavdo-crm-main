@@ -9,6 +9,7 @@ const SkuTableRow = ({
   discountPrice,
   purchasePrice,
   referalPrice,
+  DeliveryPrice,
   operatorPrice,
   boughtPrice,
   skuTitle,
@@ -43,6 +44,10 @@ const SkuTableRow = ({
           if (copyObj["fullPrice"] < copyObj["discountPrice"]) {
             copyObj["purchasePrice"] = 0;
           }
+
+          copyObj["DeliveryPrice"] = 30000
+
+          
           return copyObj;
         } else {
           return skuObj;
@@ -108,6 +113,11 @@ const SkuTableRow = ({
       <TableCell sx={{ py: 0 }}>
         <Typography variant="string">
           {purchasePrice?.toLocaleString()}
+        </Typography>
+      </TableCell>
+      <TableCell sx={{ py: 0 }}>
+        <Typography variant="string">
+          {DeliveryPrice?.toLocaleString()}
         </Typography>
       </TableCell>
       <TableCell sx={{ py: 0 }}>

@@ -1693,6 +1693,13 @@ export async function getAllSkUList({ sku, token }) {
 
 export async function updateProductSKUList({ data, token, alert, callback }) {
   try {
+    // Modify referalPrice to include comission for each SKU in the skuList
+    data.skuList = data.skuList.map((sku) => ({
+      ...sku,
+      adminPrice: (sku.DeliveryPrice || 0),
+      operatorPrice: 3000
+    }));
+
     await axios({
       method: "PUT",
       url: `${server}/product/skus`,
@@ -1701,6 +1708,7 @@ export async function updateProductSKUList({ data, token, alert, callback }) {
         auth: token,
       },
     });
+    
     alert.success({ title: "", text: "Mahsulot variantlari yangilandi" });
     callback();
   } catch (error) {
