@@ -30,7 +30,7 @@ const skuHeading = [
   },
   {
     id: "DeliveryPrice",
-    label: "Sotish narxi, so'm",
+    label: "Yetkazib berish narxi",
     align: "center",
     flash: true,
   },
