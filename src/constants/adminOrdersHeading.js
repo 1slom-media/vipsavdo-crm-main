@@ -20,6 +20,11 @@ const heading = [
     align: "center",
   },
   {
+    id: "position",
+    label: "position",
+    align: "center",
+  },
+  {
     id: "region",
     label: "Viloyati",
     align: "center",

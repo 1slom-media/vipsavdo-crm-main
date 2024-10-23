@@ -86,6 +86,9 @@ const AdminOrdersRow = ({
         <StyledTableCell align="center">
           {count} {t("Dona")}
         </StyledTableCell>
+        <StyledTableCell align="center">
+          {orderItems[0].position}
+        </StyledTableCell>
         <StyledTableCell align="center">{getCity(city_id)}</StyledTableCell>
         <StyledTableCell align="center">
           {price.toLocaleString()} so`m
